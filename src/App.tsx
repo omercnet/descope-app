@@ -18,6 +18,7 @@ const App: React.FC = () => {
 			>
 				<div>
 					<h1>Base URL is {baseUrl}</h1>
+					<h1>Project ID is {process.env.REACT_APP_DESCOPE_PROJECT_ID}</h1>
 					<Site />
 				</div>
 			</AuthProvider>

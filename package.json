@@ -91,7 +91,8 @@
 		]
 	},
 	"engines": {
-		"yarn": ">=1.22.0"
+		"yarn": "^1.22.0",
+		"node": "^18"
 	},
 	"jest": {
 		"collectCoverageFrom": [
