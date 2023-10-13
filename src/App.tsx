@@ -12,7 +12,7 @@ function App() {
   const projectId = process.env.REACT_APP_DESCOPE_PROJECT_ID || "";
 
   return baseUrl && projectId ? (<AuthProvider baseUrl={baseUrl} projectId={projectId}>
-    <Site />
+    <Site projectId={projectId} baseUrl={baseUrl}/>
     </AuthProvider>) : (<div>Loading...<pre>{JSON.stringify({projectId, baseUrl, env: process.env}, null, 2)}</pre></div>);
 }
 
