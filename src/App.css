@@ -1,131 +1,38 @@
-html,
-body,
-#root {
-	height: 100vh;
-	width: 100vw;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.App {
+  text-align: center;
 }
 
-.app {
-	display: flex;
-	flex-grow: 1;
-	height: 100%;
-	width: 100%;
-	flex-direction: column;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-.app-content {
-	display: flex;
-	flex-grow: 1;
-	flex-direction: column;
-	align-items: center;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
-.descope-container {
-	border-radius: 15px;
-	box-shadow: 0px 1px 50px 0px #b2b2b2;
-	max-width: 400px;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-.welcome-title {
-	margin-bottom: 0px;
-	font-family: 'JetBrains Mono';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 48px;
-	line-height: 128%;
-	letter-spacing: 0.6px;
-	color: #0082b5;
+.App-link {
+  color: #61dafb;
 }
 
-.example-title {
-	margin-bottom: 0px;
-	font-family: 'JetBrains Mono';
-	font-style: normal;
-	font-size: 20px;
-	letter-spacing: 0.6px;
-}
-
-.example {
-	border: 2px solid;
-	min-width: 350px;
-	border-radius: 100px;
-	border-color: #0082b5;
-	padding: 16px 32px;
-	background-color: #f6fbff;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	word-break: break-all;
-}
-
-.copy-icon {
-	margin-left: 6px;
-	height: 100%;
-}
-
-.text-body {
-	font-size: 20px;
-	display: inline-block;
-}
-
-h1 {
-	margin: 0px;
-	font-weight: 800;
-	font-size: 32px;
-	line-height: 128%;
-}
-
-p {
-	font-family: 'Barlow';
-	font-weight: 400;
-	font-style: normal;
-	line-height: 160%;
-	text-align: center;
-	display: flex;
-	letter-spacing: 0.6px;
-	color: rgba(0, 0, 0, 0.87);
-	margin-top: 8px;
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-	.app-content {
-		width: 90%;
-	}
-
-	.descope-container {
-		margin-left: 16px;
-		margin-right: 16px;
-	}
-
-	.example {
-		min-width: fit-content;
-	}
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-	.app-content {
-		width: 80%;
-	}
-	.example {
-		min-width: fit-content;
-	}
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-	.app-content {
-		width: 55%;
-	}
-	.example {
-		min-width: 350px;
-	}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
